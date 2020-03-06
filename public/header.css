@@ -1,0 +1,118 @@
+
+.header h3 {
+	flex-grow:1;
+	margin: 0rem 0rem 0rem 2rem;
+}
+.header h3 a{
+	text-decoration: none;
+	color: #FFF;
+}
+.header .list-item{
+	display: flex;
+	list-style: none;
+	margin: 0rem 2.8rem 0rem 0rem;
+}
+.header .fa-bars{
+	opacity: 0;
+}
+.header .list-item li {
+	padding: 1rem;
+}
+.header .list-item li a{
+	text-decoration: none;
+	color: #FFF;
+}
+.header .list-item li:hover {
+	background-color: #2d2d2d; 
+}
+.header .list-item .about {
+	position: relative;
+}
+.header .list-item .about:hover .submenu{
+	opacity: 1;
+	transform: translate(0px,0px)
+}
+.header .list-item .games {
+	position: relative;
+}
+.header .list-item .games:hover .submenu{
+	opacity: 1;
+	transform: translate(0px,0px)
+}
+.header .list-item .team {
+	position: relative;
+}
+.header .list-item .team:hover .submenu{
+	opacity: 1;
+	transform: translate(0px,0px)
+}
+.header .list-item .contact {
+	position: relative;
+}
+.header .list-item .contact:hover .submenu{
+	opacity: 1;
+	transform: translate(0px,0px)
+}
+.header .list-item .submenu{
+	width: 200%;
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	left: -50%;
+	top: 100%;
+	opacity: 0;
+	background-color: #616161e6;
+	transition: all 0.6s;
+	transform: translate(0px,10%);
+}
+.submenu-more{
+	display: flex;
+}
+.submenu-more ul{
+	list-style: none;
+	padding: 0;
+	background-color: #616161e6;
+}
+
+@media (max-width:768px){
+	.header .fa-bars{
+		opacity: 1;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		color: #FFF;
+		font-size: 2rem;
+		padding: 1rem;
+	}
+	/*.header:hover .list-item{
+		opacity: 1;
+	}*/
+	.header .list-item{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 50%;
+		position: absolute;
+		top: 3.5rem;
+		background-color: #616161e6;
+		transition: all 0.4s;
+		padding: 0px;
+		opacity: 0;
+	}
+	.header .list-item .submenu{
+		width: 100%;
+		list-style: none;
+		padding: 0;
+		position: absolute;
+		left: -100%;
+		top: 0%;
+		opacity: 0;
+		background-color: #616161e6;
+		transition: all 0.6s;
+		transform: translate(-100%,0%);
+	}
+	.submenu-more{
+		display: flex;
+		flex-direction: column;
+	}
+}

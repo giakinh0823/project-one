@@ -1,0 +1,118 @@
+.main .main1{
+	margin: 0px;
+	height: 40rem;
+	grid-column: 1/3;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.main .m-main2{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 2.5rem;
+}
+.main .m-main2 .darkstyle{
+	grid-column: 1/3;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.main .m-main2 .m-main21{
+	height:40rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}	
+.main .m-main2 .m-main2-item{
+	height: 25%;
+	width: 80%;
+	margin-top: 1.5rem;
+	text-decoration: none;
+	color: black;
+	position: relative;	
+	background-size: cover;
+	background-position: center;
+}
+.main .m-main2 .m-main2-item:hover .overlay-item{
+	opacity: 1;
+	transform: translate(0%,0%);
+}
+.main .m-main2 .m-main2-item .overlay-item{
+	background-color: #e6e6e6bd;
+	height: 100%;
+	width: 100%;
+	color: black;
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	transition: all 0.6s;
+}
+.main .m-main2 .m-main2-item .overlay-item .edge{
+	background-color: #da8508;
+	width: 2%;
+	height: 100%;
+}
+.main .m-main2 .m-main2-item .overlay-item .name-item{
+	font-size: 1.6rem;
+	margin-left: 1.2rem;
+}
+.main .m-main2 .image1{
+	background-image: url(./picture/1.jpg);
+}
+.main .m-main2 .image2{
+	background-image: url(./picture/2.jpg);
+}
+.main .m-main2 .image3{
+	background-image: url(./picture/3.jpg);
+}
+.main .m-main2 .image4{
+	background-image: url(./picture/4.jpg);
+}
+.main .m-main2 .image5{
+	background-image: url(./picture/5.jpg);
+}
+.main .m-main2 .image6{
+	background-image: url(./picture/6.jpg);
+}
+.main .m-main2 .image7{
+	background-image: url(./picture/7.jpg);
+}
+.main .m-main2 .image8{
+	background-image: url(./picture/8.jpg);
+}
+.main .m-main2 .image9{
+	background-image: url(./picture/9.jpg);
+}
+.main .m-main2 .image10{
+	background-image: url(./picture/10.jpg);
+}
+.main .m-main2 .image11{
+	background-image: url(./picture/11.jpg);
+}
+.main .m-main2 .image12{
+	background-image: url(./picture/12.jpg);
+}
+
+@media (max-width: 768px) {
+	.main{
+		display: block;
+		height: 100%;
+	}
+	.main1{
+		height: 10rem;
+		display: block;
+	}
+	.main .m-main2{
+		padding: 0%;
+		margin:0%;
+		display: block;
+		width: 100%;
+	}
+	.main .m-main2 .darkstyle{
+		display: flex;
+		flex-direction: column;
+	}
+}
+

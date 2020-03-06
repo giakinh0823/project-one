@@ -1,0 +1,28 @@
+.footer .footer-container {
+	padding: 14rem 2rem 5rem 2rem;
+	display: flex;
+}
+.footer .footer-container .footer-item{
+	flex-grow: 1;
+	text-align: center;
+	color: #FFF;
+	font-size: 1.1rem;
+	text-decoration: none;
+}
+.footer .footer-logo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+@media (max-width: 768px){
+	.footer{
+		display: block;
+	}
+	.footer .footer-container{
+		flex-direction: column;
+	}
+	.footer .footer-container .footer-item{
+		margin-bottom: 10%;
+	}
+}
